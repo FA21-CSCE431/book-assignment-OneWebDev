@@ -17,7 +17,7 @@ RSpec.describe Book, type: :model do
   end
 
   it 'is not valid without a price' do
-    subject.title = nil
+    subject.price = nil
     expect(subject).not_to be_valid
   end
 
